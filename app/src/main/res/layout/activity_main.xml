@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_go_dynamic_broadcast"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="go dynamic broadcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_go_static_broadcast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="go static broadcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_go_dynamic_broadcast" />
+
+    <Button
+        android:id="@+id/btn_send_dynamic_broadcast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="send dynamic broadcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_go_static_broadcast" />
+
+    <Button
+        android:id="@+id/btn_send_static_broadcast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="send static broadcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_send_dynamic_broadcast" />
+
+    <Button
+        android:id="@+id/btn_go_order_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="go ordered activity 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_send_static_broadcast" />
+
+    <Button
+        android:id="@+id/btn_go_network"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="go network activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_go_order_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
